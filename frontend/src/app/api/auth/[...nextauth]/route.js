@@ -19,26 +19,35 @@ export const authOptions = {
       },
       async authorize(credentials) {
         try {
-          const res = await fetch(`${process.env.BACKEND_URL}/api/users/login`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              email: credentials.email,
-              password: credentials.password,
-            }),
-          });
+          const res = await fetch(
+            `${process.env.BACKEND_URL}/api/users/login`,
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                email: credentials.email,
+                password: credentials.password,
+              }),
+            }
+          );
+
+          const data = await res.json();
 
           if (!res.ok) {
-            throw new Error("Invalid login response");
+            throw new Error(data.error || "Invalid credentials");
           }
 
-          const user = await res.json();
-
-          if (user && user.email) {
-            return user; // ✅ pass user to NextAuth
+          // ✅ Ensure the returned object has at least id, email, name
+          if (data?.user?.email) {
+            return {
+              id: data.user.id,
+              name: data.user.name,
+              email: data.user.email,
+              token: data.token, // include backend JWT
+            };
           }
 
-          return null; // ❌ login failed
+          return null;
         } catch (error) {
           console.error("Authorize error:", error);
           return null;
