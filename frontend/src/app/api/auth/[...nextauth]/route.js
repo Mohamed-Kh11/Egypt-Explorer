@@ -32,24 +32,27 @@ export const authOptions = {
           );
 
           const data = await res.json();
+          console.log(
+            "🔍 Backend login response:",
+            data,
+            "status:",
+            res.status
+          );
 
-          if (!res.ok) {
-            throw new Error(data.error || "Invalid credentials");
-          }
+          if (!res.ok) return null; // 401 triggered here if false
 
-          // ✅ Ensure the returned object has at least id, email, name
           if (data?.user?.email) {
             return {
               id: data.user.id,
               name: data.user.name,
               email: data.user.email,
-              token: data.token, // include backend JWT
+              token: data.token,
             };
           }
 
           return null;
-        } catch (error) {
-          console.error("Authorize error:", error);
+        } catch (err) {
+          console.error("Authorize error:", err);
           return null;
         }
       },
