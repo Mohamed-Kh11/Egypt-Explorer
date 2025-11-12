@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import axios from "axios";
+import api from "../lib/axios"; // ✅ use your axios instance
 import Link from "next/link";
 import Image from "next/image";
 import toast from "react-hot-toast";
@@ -16,10 +16,12 @@ export default function StorePage() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:5001/api/products"); // adjust API URL
+        // ✅ uses your axios instance (handles baseURL + headers)
+        const res = await api.get("/products");
         setProducts(res.data);
       } catch (err) {
         console.error("Error fetching products:", err);
+        toast.error("Failed to load products");
       } finally {
         setLoading(false);
       }

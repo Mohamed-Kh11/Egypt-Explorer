@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
-import axios from "axios";
+import axios from "../../lib/axios";
 import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -26,7 +26,7 @@ export default function BuyPage() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:5001/api/products/${id}`);
+        const res = await axios.get(`/api/products/${id}`);
         setProduct(res.data);
       } catch (err) {
         console.error("Error fetching product:", err);
@@ -38,26 +38,31 @@ export default function BuyPage() {
     fetchProduct();
   }, [id, t]);
 
-  const handleOrder = () => {
+  const handleOrder = async () => {
     if (!address || !city || !phone) {
       toast.error(t("fillDetails"));
       return;
     }
+
     const ref = "ORD-" + Math.floor(100000 + Math.random() * 900000);
     setOrderRef(ref);
 
-    toast.success(t("orderPlacedToast"));
-
-    // Here you could send order details to backend
-    console.log({
-      productId: product._id,
-      quantity,
-      payment,
-      address,
-      city,
-      phone,
-      reference: ref,
-    });
+    try {
+      // Optional: send order details to backend
+      await axios.post("/api/orders", {
+        productId: product._id,
+        quantity,
+        payment,
+        address,
+        city,
+        phone,
+        reference: ref,
+      });
+      toast.success(t("orderPlacedToast"));
+    } catch (error) {
+      console.error("Error placing order:", error);
+      toast.error(t("orderError"));
+    }
   };
 
   if (loading) return <p className="text-center text-white pt-20">{t("loading")}</p>;
@@ -97,7 +102,6 @@ export default function BuyPage() {
 
               {/* Order Form */}
               <div className="flex flex-col gap-4">
-                {/* Quantity */}
                 <div>
                   <label className="block mb-1">{t("quantity")}</label>
                   <input
@@ -109,7 +113,6 @@ export default function BuyPage() {
                   />
                 </div>
 
-                {/* Payment */}
                 <div>
                   <label className="block mb-3 md:mb-1">{t("paymentMethod")}</label>
                   <div className="flex gap-6">
@@ -134,7 +137,6 @@ export default function BuyPage() {
                   </div>
                 </div>
 
-                {/* Address & City */}
                 <div className="flex gap-3 w-full justify-center">
                   <div className="w-full">
                     <label className="block mb-1">{t("address")}</label>
@@ -156,7 +158,6 @@ export default function BuyPage() {
                   </div>
                 </div>
 
-                {/* Phone */}
                 <div>
                   <label className="block mb-1">{t("phone")}</label>
                   <input
@@ -167,7 +168,6 @@ export default function BuyPage() {
                   />
                 </div>
 
-                {/* Submit */}
                 <button
                   onClick={handleOrder}
                   className="w-full mt-2 bg-yellow-400 text-white py-2 rounded-lg font-bold hover:bg-yellow-500 transition"
@@ -178,52 +178,73 @@ export default function BuyPage() {
             </div>
           ) : (
             <div className="flex flex-col h-full md:max-h-[500px] bg-gray-100 dark:bg-[#111] p-6 rounded-lg shadow-lg transition-colors">
-
-              {/* Header */}
               <div className="border-b border-gray-300 dark:border-gray-700 pb-3 mb-4">
                 <h2 className="text-2xl font-bold text-yellow-600 dark:text-yellow-400 flex items-center gap-2">
                   🧾 {t("invoice")}
                 </h2>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {t("reference")}: <span className="text-green-600 dark:text-green-400 font-semibold">{orderRef}</span>
+                  {t("reference")}:{" "}
+                  <span className="text-green-600 dark:text-green-400 font-semibold">
+                    {orderRef}
+                  </span>
                 </p>
               </div>
 
-              {/* Invoice Body */}
               <div className="flex-1 flex flex-col gap-3 text-sm">
                 <div className="flex justify-between">
-                  <span className="font-semibold text-gray-800 dark:text-gray-300">{t("invoiceProduct")}:</span>
-                  <span className="text-gray-900 dark:text-gray-200">{product.name?.[locale] || product.name?.en}</span>
+                  <span className="font-semibold text-gray-800 dark:text-gray-300">
+                    {t("invoiceProduct")}:
+                  </span>
+                  <span className="text-gray-900 dark:text-gray-200">
+                    {product.name?.[locale] || product.name?.en}
+                  </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-semibold text-gray-800 dark:text-gray-300">{t("invoiceQuantity")}:</span>
+                  <span className="font-semibold text-gray-800 dark:text-gray-300">
+                    {t("invoiceQuantity")}:
+                  </span>
                   <span className="text-gray-900 dark:text-gray-200">{quantity}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-semibold text-gray-800 dark:text-gray-300">{t("invoicePrice")}:</span>
-                  <span className="text-gray-900 dark:text-gray-200">${product.price.toFixed(2)}</span>
+                  <span className="font-semibold text-gray-800 dark:text-gray-300">
+                    {t("invoicePrice")}:
+                  </span>
+                  <span className="text-gray-900 dark:text-gray-200">
+                    ${product.price.toFixed(2)}
+                  </span>
                 </div>
                 <div className="flex justify-between border-t border-gray-300 dark:border-gray-700 pt-2">
-                  <span className="font-bold text-yellow-600 dark:text-yellow-300">{t("total")}:</span>
+                  <span className="font-bold text-yellow-600 dark:text-yellow-300">
+                    {t("total")}:
+                  </span>
                   <span className="font-bold text-yellow-600 dark:text-yellow-300">
                     ${(product.price * quantity).toFixed(2)}
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-semibold text-gray-800 dark:text-gray-300">{t("invoicePayment")}:</span>
-                  <span className="text-gray-900 dark:text-gray-200">{payment === "cash" ? t("cash") : t("credit")}</span>
+                  <span className="font-semibold text-gray-800 dark:text-gray-300">
+                    {t("invoicePayment")}:
+                  </span>
+                  <span className="text-gray-900 dark:text-gray-200">
+                    {payment === "cash" ? t("cash") : t("credit")}
+                  </span>
                 </div>
                 <div>
-                  <span className="font-semibold text-gray-800 dark:text-gray-300">{t("invoiceAddress")}:</span>
-                  <p className="ml-2 text-gray-900 dark:text-gray-200">{address}, {city}</p>
+                  <span className="font-semibold text-gray-800 dark:text-gray-300">
+                    {t("invoiceAddress")}:
+                  </span>
+                  <p className="ml-2 text-gray-900 dark:text-gray-200">
+                    {address}, {city}
+                  </p>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-semibold text-gray-800 dark:text-gray-300">{t("invoicePhone")}:</span>
+                  <span className="font-semibold text-gray-800 dark:text-gray-300">
+                    {t("invoicePhone")}:
+                  </span>
                   <span className="text-gray-900 dark:text-gray-200">{phone}</span>
                 </div>
               </div>
             </div>
-
           )}
         </div>
       </div>
