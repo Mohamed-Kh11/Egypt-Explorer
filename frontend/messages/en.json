@@ -1,0 +1,702 @@
+{
+  "home": {
+    "hello": "hello",
+    "Menu": "Menu",
+    "Travel": "Travel",
+    "Tourist Visa": "Visa",
+    "Flight Tickets": "Flight Tickets",
+    "Hotel Booking": "Hotel Booking",
+    "Explore": "Explore",
+    "Destinations": "Destinations",
+    "Climate": "Climate",
+    "Culture": "Culture",
+    "More": "More",
+    "Gallery": "Gallery",
+    "Quiz": "Quiz",
+    "Store": "Store",
+    "Contact": "Contact",
+    "Q&A": "Q&A",
+    "Forum": "Forum",
+    "Contact Us": "Contact Us",
+    "heroImageAlt": "heroImageAlt",
+    "hero": {
+      "title": "Discover Egypt Like Never Before",
+      "subtitle": "Explore destinations, book trips, and dive into Egypt's history and culture — all in one place.",
+      "startExploring": "Start Exploring",
+      "planTrip": "Plan Your Trip",
+      "cultureHistory": "Culture & History",
+      "community": "Community",
+      "scroll": "Scroll to Explore"
+    }
+  },
+  "highlights": {
+    "sectionTitle": "Discover Egypt",
+    "culture": {
+      "title": "Culture",
+      "text": "Experience Egypt’s vibrant traditions, music, and flavors — a journey into its living heritage."
+    },
+    "historic": {
+      "title": "Historic Sites",
+      "text": "Stand in awe before the Pyramids, temples, and monuments that shaped civilization itself."
+    },
+    "adventure": {
+      "title": "Adventure",
+      "text": "From diving in the Red Sea to desert safaris, explore Egypt beyond the ordinary."
+    }
+  },
+  "facts": {
+    "title": "Fascinating Fact About Egypt",
+    "shuffle": "Shuffle",
+    "fact1": "Egypt is home to the only remaining Wonder of the Ancient World — the Great Pyramid of Giza.",
+    "fact2": "The Nile River is the longest river in the world, stretching over 6,650 km.",
+    "fact3": "Ancient Egyptians invented one of the earliest forms of writing: hieroglyphics.",
+    "fact4": "The Library of Alexandria was one of the largest and most significant libraries of the ancient world.",
+    "fact5": "Egypt is known as the 'Gift of the Nile' because the river made civilization possible in the desert.",
+    "fact6": "The ancient Egyptians were the first to invent toothpaste, using ingredients like crushed eggshells and pumice.",
+    "fact7": "The Sphinx of Giza is one of the largest and oldest statues in the world.",
+    "fact8": "Cleopatra VII was the last active ruler of the Ptolemaic Kingdom of Egypt.",
+    "fact9": "Egypt has more than 118 identified pyramids across the country.",
+    "fact10": "The ancient Egyptian calendar was one of the first solar calendars, with 365 days in a year."
+  },
+  "ticket": {
+    "imageAlt": "Visa ticket illustration",
+    "title": "Visa & Travel Made Easy—Like Never Before",
+    "button": "Start Visa Process"
+  },
+  "newsletter": {
+    "title": "Stay in the Loop!",
+    "subtitle": "Subscribe to our newsletter and get the latest updates, travel tips, and exclusive offers.",
+    "placeholder": "Enter your email",
+    "button": "Subscribe",
+    "success": "✅ Thanks for subscribing!"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "links": {
+      "visa": "Visa",
+      "flights": "Flight Tickets",
+      "hotels": "Hotel Booking",
+      "destinations": "Destinations",
+      "culture": "Culture"
+    },
+    "contact": "Contact",
+    "email": "Email: info@egypt.com",
+    "phone": "Phone: +20 123 456 7890",
+    "address": "Address: Cairo, Egypt",
+    "copyright": "© 2025 Egypt Explorer - All Rights Reserved"
+  },
+  "visa": {
+    "title": "Egypt Visa Information",
+    "intro": "Plan your trip with ease – find out how to apply for an Egyptian visa, required documents, and fees.",
+    "touristVisa": {
+      "title": "Tourist Visa",
+      "desc": "For leisure, sightseeing, and travel."
+    },
+    "businessVisa": {
+      "title": "Business Visa",
+      "desc": "For meetings, conferences, or trade."
+    },
+    "requirements": {
+      "title": "Requirements",
+      "passport": "Passport valid for at least 6 months",
+      "photo": "Recent passport-sized photo",
+      "booking": "Hotel booking or invitation letter",
+      "ticket": "Confirmed return flight ticket"
+    },
+    "fees": {
+      "title": "Visa Fees",
+      "single": "Single entry: $25",
+      "multiple": "Multiple entry: $60"
+    },
+    "processing": {
+      "title": "Processing Time",
+      "time": "Typically 3–7 business days"
+    },
+    "applyNow": "Apply Now"
+  },
+  "destinations": {
+    "title": "Top Tourist Destinations",
+    "luxor": "Luxor",
+    "luxor_desc": "Known as the world’s greatest open-air museum",
+    "cairo": "Cairo",
+    "cairo_desc": "Capital city and home of the Pyramids of Giza",
+    "hurghada": "Hurghada",
+    "hurghada_desc": "Popular Red Sea resort town",
+    "sharm": "Sharm El Sheikh",
+    "sharm_desc": "Famous for diving and beaches",
+    "aswan": "Aswan",
+    "aswan_desc": "Peaceful Nile-side city with ancient temples",
+    "alexandria": "Alexandria",
+    "alexandria_desc": "Historic coastal city founded by Alexander the Great",
+    "details": {
+      "luxor": {
+        "name": "Luxor",
+        "fullText": "Luxor is often called the world’s greatest open-air museum, with a concentration of ancient monuments unmatched anywhere else. On the East Bank of the Nile, the awe-inspiring Karnak Temple complex and Luxor Temple stand as reminders of the city’s grandeur during the New Kingdom. Across the river, the West Bank houses the Valley of the Kings, where pharaohs such as Tutankhamun were buried, alongside the Valley of the Queens and the stunning Temple of Hatshepsut."
+      },
+      "hurghada": {
+        "name": "Hurghada",
+        "fullText": "Hurghada is one of the Red Sea’s most famous resorts, renowned for its crystal-clear waters, colorful coral reefs, and vibrant marine life. It’s a paradise for divers and snorkelers, with world-class diving spots such as Giftun Island and nearby wreck sites. The city also offers water sports, desert safaris, and luxurious resorts catering to every kind of traveler."
+      },
+      "sharm-el-sheikh": {
+        "name": "Sharm El Sheikh",
+        "fullText": "Sharm El Sheikh is world-renowned for its diving spots, golden beaches, and luxury resorts. Ras Mohammed National Park, with its spectacular coral reefs, is a highlight for divers, while Naama Bay offers bustling nightlife, restaurants, and shopping. Visitors can also embark on desert adventures, camel rides, and Bedouin-style dinners under the stars."
+      },
+      "aswan": {
+        "name": "Aswan",
+        "fullText": "Aswan is a serene Nile-side city, rich in history and culture. It is home to the beautiful Philae Temple dedicated to the goddess Isis, the monumental Abu Simbel temples built by Ramses II, and the impressive High Dam, a modern engineering marvel. The Nubian villages nearby add vibrant culture, colorful homes, and warm hospitality to the Aswan experience."
+      },
+      "alexandria": {
+        "name": "Alexandria",
+        "fullText": "Founded by Alexander the Great, Alexandria is Egypt’s historic Mediterranean gem. It was once home to the legendary Lighthouse of Alexandria and the Great Library, and today it boasts the modern Bibliotheca Alexandrina, a hub of knowledge and culture. The Citadel of Qaitbay, built on the site of the ancient lighthouse, stands as a majestic coastal fortress."
+      },
+      "cairo": {
+        "name": "Cairo",
+        "fullText": "Cairo, Egypt’s bustling capital, is a city of contrasts where ancient wonders meet vibrant modern life. It is home to the world-famous Pyramids of Giza and the Sphinx, as well as the Egyptian Museum, which houses treasures of Tutankhamun and countless artifacts from pharaonic times. Islamic Cairo offers centuries-old mosques and madrassas, while Coptic Cairo preserves the heritage of Egypt’s Christian community."
+      },
+      "backToDestinations": "back To Destinations"
+    }
+  },
+  "climate": {
+    "title": "Egypt Climate & Weather",
+    "intro": "Egypt has a desert climate with hot summers and mild winters. Rain is rare except in Alexandria, where winter showers are common. Always bring sunscreen, hats, and light clothes for summer, and a light jacket for cooler evenings.",
+    "loading": "Loading weather...",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "cities": {
+      "cairo": {
+        "name": "Cairo",
+        "climate": "Hot and dry most of the year, cooler in winter evenings."
+      },
+      "alexandria": {
+        "name": "Alexandria",
+        "climate": "Mediterranean climate with mild winters and occasional rain."
+      },
+      "aswan": {
+        "name": "Aswan",
+        "climate": "Extremely hot in summer, pleasantly warm in winter."
+      },
+      "luxor": {
+        "name": "Luxor",
+        "climate": "Hot desert climate with cool nights in winter."
+      },
+      "sharm-el-sheikh": {
+        "name": "Sharm El Sheikh",
+        "climate": "Sunny all year, warm winters and very hot summers."
+      },
+      "hurghada": {
+        "name": "Hurghada",
+        "climate": "Mild winters and hot, dry summers with cool breezes."
+      }
+    },
+    "tips": {
+      "title": "What to Wear",
+      "winter": {
+        "title": "Winter (Dec–Feb)",
+        "text": "Light jacket or sweater, evenings can be cool."
+      },
+      "spring": {
+        "title": "Spring (Mar–May)",
+        "text": "Comfortable clothes, watch for occasional sandstorms."
+      },
+      "summer": {
+        "title": "Summer (Jun–Aug)",
+        "text": "Very hot, wear light cotton clothes, hat, sunscreen."
+      },
+      "autumn": {
+        "title": "Autumn (Sep–Nov)",
+        "text": "Pleasant weather, ideal for sightseeing."
+      }
+    }
+  },
+  "qa": {
+    "title": "Frequently Asked Questions",
+    "q1": "Do I need a visa to visit Egypt?",
+    "a1": "Most visitors require a tourist visa. Many nationalities can apply online for an e-visa or get one upon arrival.",
+    "q2": "What is the best time to visit Egypt?",
+    "a2": "October to April is the most pleasant period with mild weather, perfect for sightseeing.",
+    "q3": "Is Egypt safe for tourists?",
+    "a3": "Yes, Egypt is generally safe for tourists, especially in main tourist areas, but always stay cautious.",
+    "q4": "What currency is used in Egypt?",
+    "a4": "The official currency is the Egyptian Pound (EGP).",
+    "q5": "Can I use credit cards in Egypt?",
+    "a5": "Yes, credit cards are widely accepted in hotels, restaurants, and shops in major cities.",
+    "q6": "What language is spoken in Egypt?",
+    "a6": "Arabic is the official language, but English is commonly spoken in tourist areas.",
+    "q7": "What should I wear in Egypt?",
+    "a7": "Light clothing for the day, modest outfits for religious sites, and warmer clothes for evenings in winter.",
+    "q8": "Can women travel alone in Egypt?",
+    "a8": "Yes, but it is advisable to dress modestly and stay in safe areas.",
+    "q9": "How should I get around in Egypt?",
+    "a9": "Taxis, ride-hailing apps, domestic flights, and trains are common transport options.",
+    "q10": "Is tap water safe to drink?",
+    "a10": "It is better to drink bottled or filtered water to avoid stomach issues.",
+    "q11": "Do I need travel insurance?",
+    "a11": "Yes, it is highly recommended for medical and travel-related coverage.",
+    "q12": "Can I visit the Pyramids of Giza?",
+    "a12": "Yes, the Pyramids are open year-round and offer guided tours and camel rides.",
+    "q13": "What souvenirs should I buy from Egypt?",
+    "a13": "Popular items include papyrus art, perfumes, jewelry, spices, and handcrafts.",
+    "q14": "How hot does it get in summer?",
+    "a14": "Temperatures can exceed 40°C (104°F) in Upper Egypt and desert areas.",
+    "q15": "Does it rain in Egypt?",
+    "a15": "Rain is rare, mostly occurring in Alexandria and coastal cities during winter.",
+    "q16": "Are there dress codes for visiting mosques?",
+    "a16": "Yes, modest clothing is required: long pants, covered shoulders, and women should cover their hair.",
+    "q17": "Do I need vaccinations before visiting?",
+    "a17": "Routine vaccinations are recommended. Check with your doctor for travel-specific advice.",
+    "q18": "Can I take photos everywhere?",
+    "a18": "Photos are allowed in most places, but some museums and tombs require an extra ticket.",
+    "q19": "How do I handle tipping?",
+    "a19": "Tipping (baksheesh) is customary in Egypt, especially for small services.",
+    "q20": "What electrical plugs are used in Egypt?",
+    "a20": "Egypt uses Type C and Type F plugs with 220V supply."
+  },
+  "culture": {
+    "title": "Egyptian Culture",
+    "intro": "Egyptian culture is a rich blend of ancient traditions and modern influences, reflecting thousands of years of history and civilization.",
+    "clothingTitle": "Clothing",
+    "clothingText": "Traditional clothing varies across regions. In rural areas, galabeyas are common, while in cities, modern fashion blends with modest styles.",
+    "traditionsTitle": "Traditions",
+    "traditionsText": "Family and hospitality are central to Egyptian traditions. Respect for elders and strong community ties are deeply valued.",
+    "festivalsTitle": "Festivals",
+    "festivalsText": "Egypt celebrates many festivals, from Islamic and Christian holidays to ancient-inspired celebrations like Sham El-Nessim."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Have questions about your trip to Egypt? We're here to help. Reach out to us using the options below.",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "addressText": "Cairo, Egypt",
+    "followUs": "Follow Us"
+  },
+  "quiz": {
+    "title": "Egypt Quiz",
+    "description": "Test your knowledge about Egypt’s cities, history, football and more!",
+    "questionNumber": "Question {num} of {total}",
+    "prev": "Previous",
+    "next": "Next",
+    "finish": "Finish Quiz",
+    "resultTitle": "Quiz Completed!",
+    "score": "You scored {score} out of {total}.",
+    "thanks": "Thanks for playing! 🇪🇬",
+    "questions": [
+      {
+        "question": "Which city is known as the 'Pearl of the Mediterranean'?",
+        "options": [
+          {
+            "text": "Cairo",
+            "correct": false
+          },
+          {
+            "text": "Alexandria",
+            "correct": true
+          },
+          {
+            "text": "Giza",
+            "correct": false
+          },
+          {
+            "text": "Luxor",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "When was the Egyptian national football team founded?",
+        "options": [
+          {
+            "text": "1921",
+            "correct": true
+          },
+          {
+            "text": "1935",
+            "correct": false
+          },
+          {
+            "text": "1950",
+            "correct": false
+          },
+          {
+            "text": "1960",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which river flows through Egypt?",
+        "options": [
+          {
+            "text": "Amazon",
+            "correct": false
+          },
+          {
+            "text": "Nile",
+            "correct": true
+          },
+          {
+            "text": "Euphrates",
+            "correct": false
+          },
+          {
+            "text": "Danube",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the capital of Egypt?",
+        "options": [
+          {
+            "text": "Cairo",
+            "correct": true
+          },
+          {
+            "text": "Giza",
+            "correct": false
+          },
+          {
+            "text": "Alexandria",
+            "correct": false
+          },
+          {
+            "text": "Aswan",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which famous football player is from Egypt?",
+        "options": [
+          {
+            "text": "Zinedine Zidane",
+            "correct": false
+          },
+          {
+            "text": "Riyad Mahrez",
+            "correct": false
+          },
+          {
+            "text": "Mohamed Salah",
+            "correct": true
+          },
+          {
+            "text": "Brahim Díaz",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "The Pyramids of Giza are one of the:",
+        "options": [
+          {
+            "text": "Seven Wonders of the Ancient World",
+            "correct": true
+          },
+          {
+            "text": "Seven Wonders of the Modern World",
+            "correct": false
+          },
+          {
+            "text": "UNESCO Natural Sites",
+            "correct": false
+          },
+          {
+            "text": "Modern Monuments",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which sea borders Egypt to the east?",
+        "options": [
+          {
+            "text": "Mediterranean Sea",
+            "correct": false
+          },
+          {
+            "text": "Red Sea",
+            "correct": true
+          },
+          {
+            "text": "Black Sea",
+            "correct": false
+          },
+          {
+            "text": "Caspian Sea",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Luxor is famous for:",
+        "options": [
+          {
+            "text": "The Valley of the Kings",
+            "correct": true
+          },
+          {
+            "text": "Modern skyscrapers",
+            "correct": false
+          },
+          {
+            "text": "Industrial factories",
+            "correct": false
+          },
+          {
+            "text": "Oil fields",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is Egypt’s official language?",
+        "options": [
+          {
+            "text": "English",
+            "correct": false
+          },
+          {
+            "text": "Arabic",
+            "correct": true
+          },
+          {
+            "text": "French",
+            "correct": false
+          },
+          {
+            "text": "Greek",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the official currency of Egypt?",
+        "options": [
+          {
+            "text": "Dollar",
+            "correct": false
+          },
+          {
+            "text": "Pound",
+            "correct": true
+          },
+          {
+            "text": "Euro",
+            "correct": false
+          },
+          {
+            "text": "Dinar",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which ancient queen ruled Egypt?",
+        "options": [
+          {
+            "text": "Cleopatra",
+            "correct": true
+          },
+          {
+            "text": "Elizabeth",
+            "correct": false
+          },
+          {
+            "text": "Victoria",
+            "correct": false
+          },
+          {
+            "text": "Isabella",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which Egyptian city is known for scuba diving?",
+        "options": [
+          {
+            "text": "Sharm El Sheikh",
+            "correct": true
+          },
+          {
+            "text": "Cairo",
+            "correct": false
+          },
+          {
+            "text": "Luxor",
+            "correct": false
+          },
+          {
+            "text": "Alexandria",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What desert covers much of Egypt?",
+        "options": [
+          {
+            "text": "Sahara Desert",
+            "correct": true
+          },
+          {
+            "text": "Gobi Desert",
+            "correct": false
+          },
+          {
+            "text": "Kalahari Desert",
+            "correct": false
+          },
+          {
+            "text": "Thar Desert",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "When did Egypt officially gain independence from Britain?",
+        "options": [
+          {
+            "text": "1922",
+            "correct": true
+          },
+          {
+            "text": "1945",
+            "correct": false
+          },
+          {
+            "text": "1956",
+            "correct": false
+          },
+          {
+            "text": "1967",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which animal was sacred in Ancient Egypt?",
+        "options": [
+          {
+            "text": "Cats",
+            "correct": true
+          },
+          {
+            "text": "Dogs",
+            "correct": false
+          },
+          {
+            "text": "Cows",
+            "correct": false
+          },
+          {
+            "text": "Lions",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  "signin": {
+    "title": "Sign In",
+    "subtitle": "Welcome back! Please log in to continue.",
+    "email": "Email Address",
+    "password": "Password",
+    "signin": "Sign In",
+    "or": "or",
+    "google": "Continue with Google",
+    "noAccount": "Don't have an account?",
+    "signup": "Sign Up"
+  },
+  "flights": {
+    "title": "Book Your Flight",
+    "intro": "Search international flights to Egypt. Choose your departure city, destination, and travel date to see available flights.",
+    "from": "Departure City",
+    "to": "Arrival City",
+    "date": "Travel Date",
+    "search": "Search Flights",
+    "results": "Available Flights",
+    "noResults": "No flights match your search.",
+    "airline": "Airline",
+    "price": "Price",
+    "action": "Action",
+    "book": "Book Now"
+  },
+  "hotels": {
+    "title": "Find Your Stay in Egypt",
+    "intro": "Browse and book hotels in Cairo, Luxor, Sharm El-Sheikh, and more.",
+    "selectCity": "Select a city",
+    "search": "Search Hotels",
+    "results": "Available Hotels",
+    "noResults": "No hotels found for this city.",
+    "book": "Book Now",
+    "rooms": "rooms"
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "allCities": "All Cities",
+    "prev": "Previous",
+    "next": "Next",
+    "filterByCity": "filterByCity",
+    "Cairo": "Cairo",
+    "Giza": "Giza",
+    "Luxor": "Luxor",
+    "Aswan": "Aswan",
+    "Alexandria": "Alexandria",
+    "Matrouh": "Matrouh",
+    "Sharm El Sheikh": "Sharm El Sheikh",
+    "Hurghada": "Hurghada",
+    "Minya": "Minya",
+    "Sinai": "Sinai"
+  },
+  "store": {
+    "title": "Our Store",
+    "purchase": "Purchase",
+    "availableSizes": "Available Sizes",
+    "loading": "Loading products",
+    "error": "Failed to fetch products. Please try again later."
+  },
+  "forum": {
+    "Forum": "Forum",
+    "Post": "Post",
+    "PleaseSign": "Please sign in to share your experience."
+  },
+  "signup": {
+    "title": "Create Account",
+    "subtitle": "Join us and start exploring today!",
+    "name": "Full Name",
+    "email": "Email Address",
+    "password": "Password",
+    "signup": "Sign Up",
+    "loading": "Creating account...",
+    "or": "or",
+    "google": "Continue with Google"
+  },
+  "buy": {
+    "title": "Our Store",
+    "purchase": "Buy Now",
+    "quantity": "Quantity",
+    "paymentMethod": "Payment Method",
+    "cash": "Cash on Delivery",
+    "credit": "Credit Card",
+    "address": "Address",
+    "city": "City",
+    "phone": "Phone Number",
+    "placeOrder": "Place Order",
+    "orderPlacedToast": "Order placed!",
+    "fillDetails": "Please fill in all details!",
+    "loading": "Loading...",
+    "notFound": "Product not found",
+    "invoice": "Order Receipt",
+    "invoiceProduct": "Product",
+    "invoiceQuantity": "Quantity",
+    "invoicePrice": "Price",
+    "total": "Total",
+    "invoicePayment": "Payment Method",
+    "invoiceAddress": "Delivery Address",
+    "invoicePhone": "Phone",
+    "reference": "Reference Number",
+    "product":"product"
+  }
+}
